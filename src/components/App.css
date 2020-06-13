@@ -1,19 +1,42 @@
-.App {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  justify-content: center;
-  height: 65vh;
+@media (orientation: portrait) and (max-width: 480px) {
+  .App {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    height: 65vh;
+  }
+  .name {
+    text-align: center;
+    flex-basis: 90%;
+    font-size: 20px;
+    margin: 50px auto;
+  }
+  .Multi {
+    margin-bottom: 50px;
+  }
+  .StartViev {
+    margin: 0 auto;
+  }
 }
-.name {
-  text-align: center;
-  flex-basis: 90%;
-  font-size: 20px;
-  margin: 50px auto;
-}
-.Multi {
-  margin-bottom: 50px;
-}
-.StartViev {
-  margin: 0 auto;
+@media (min-width: 481px) {
+  .App {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    height: 60vh;
+  }
+  .name {
+    text-align: center;
+    flex-basis: 90%;
+    font-size: 24px;
+    margin: 50px auto;
+  }
+  .Multi {
+    margin: 60px;
+  }
+  .StartViev {
+    margin: 0 auto;
+  }
 }
