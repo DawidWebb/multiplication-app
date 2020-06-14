@@ -4,14 +4,23 @@ import StartViev from "./StartViev";
 import Multi from "./Multi";
 
 class App extends Component {
-  state = {};
+  state = {
+    appValue: 0,
+  };
+  changeValue = (sumOfMulti) => {
+    console.log(sumOfMulti);
+    this.setState({
+      appValue: sumOfMulti,
+    });
+    console.log(this.state.appValue);
+  };
 
   render() {
     return (
       <div className="App">
         <div className="name">Test</div>
-        <Multi />
-        <StartViev />
+        <Multi changeValue={this.changeValue} />
+        <StartViev appValue={this.state.appValue} />
       </div>
     );
   }

@@ -25,11 +25,9 @@ class Multi extends Component {
     });
   };
   handleCheck = () => {
-    if (
-      this.state.value * 1 ===
-      this.state.numbers[0] * this.state.numbers[1]
-    ) {
-      return console.log("WIN");
+    let sumOfMulti = this.state.numbers[0] * this.state.numbers[1];
+    if (this.state.value * 1 === sumOfMulti) {
+      this.props.changeValue(sumOfMulti);
     } else {
       return console.log("LOSE");
     }
