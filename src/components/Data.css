@@ -12,6 +12,21 @@
   text-align: center;
   line-height: 60px;
 }
+.sumOfMulti {
+  position: relative;
+}
+.sumOfMulti input {
+  width: 93%;
+  height: 93%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  font-size: 28px;
+  text-align: center;
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
