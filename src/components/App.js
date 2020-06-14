@@ -12,15 +12,16 @@ class App extends Component {
     this.setState({
       appValue: sumOfMulti,
     });
-    console.log(this.state.appValue);
+    this.newDiv();
   };
+  newDiv = () => {};
 
   render() {
     return (
       <div className="App">
         <div className="name">Test</div>
         <Multi changeValue={this.changeValue} />
-        <StartViev appValue={this.state.appValue} />
+        <StartViev appValue={this.state.appValue} newDiv={this.newDiv} />
       </div>
     );
   }
