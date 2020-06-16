@@ -107,10 +107,10 @@ const numbersTotal = [
   { id: 80, name: 90 },
   { id: 81, name: 100 },
 ];
-class StartViev extends Component {
-  state = {
-    value: [],
-  };
+
+class Viev extends Component {
+  state = {};
+
   render() {
     return (
       <div className="StartViev">
@@ -127,12 +127,17 @@ class StartViev extends Component {
 
         <div className="calculationViev">
           {numbersTotal.map((number) => {
-            return <div key={number.id} name={number.name}></div>;
+            return (
+              <div
+                key={number.id}
+                name={number.name}
+                style={{ backgroundColor: "red" }}
+              ></div>
+            );
           })}
         </div>
       </div>
     );
   }
 }
-
-export default StartViev;
+export default Viev;

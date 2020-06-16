@@ -3,6 +3,7 @@
   grid-template-columns: 20px 220px;
   grid-template-rows: 20px 220px;
   gap: 4px;
+  margin-top: 20px;
 }
 .row {
   grid-column: 1/-1;
