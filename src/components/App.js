@@ -7,7 +7,6 @@ class App extends Component {
     appValue: 0,
   };
   changeValue = (sumOfMulti) => {
-    console.log(sumOfMulti);
     this.setState({
       appValue: sumOfMulti,
     });

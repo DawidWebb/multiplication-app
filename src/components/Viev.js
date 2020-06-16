@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Start.css";
+import "./Viev.css";
 
 const numbersCol = [
   { id: 2, name: 2 },
@@ -109,7 +109,9 @@ const numbersTotal = [
 ];
 
 class Viev extends Component {
-  state = {};
+  state = {
+    active: false,
+  };
 
   render() {
     return (
@@ -127,13 +129,19 @@ class Viev extends Component {
 
         <div className="calculationViev">
           {numbersTotal.map((number) => {
-            return (
-              <div
-                key={number.id}
-                name={number.name}
-                style={{ backgroundColor: "red" }}
-              ></div>
-            );
+            if (this.props.sum > 0) {
+              if (number.name === this.props.sum) {
+                return (
+                  <div
+                    key={number.id}
+                    name={number.name}
+                    style={{ backgroundColor: "red" }}
+                  ></div>
+                );
+              } else {
+                return <div key={number.id} name={number.name}></div>;
+              }
+            }
           })}
         </div>
       </div>

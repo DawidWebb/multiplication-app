@@ -8,6 +8,7 @@ class Multi extends Component {
     value: "",
     numbers: [],
     active: false,
+    sumOfMulti: null,
   };
   handleDraw = () => {
     let numbers = [...this.state.numbers];
@@ -30,15 +31,14 @@ class Multi extends Component {
     let sumOfMulti = this.state.numbers[0] * this.state.numbers[1];
     if (this.state.value * 1 === sumOfMulti) {
       this.props.changeValue(sumOfMulti);
-      this.changeViev();
+      this.setState({
+        sumOfMulti,
+        active: true,
+      });
+      console.log(sumOfMulti);
     } else {
       return console.log("LOSE");
     }
-  };
-  changeViev = () => {
-    this.setState({
-      active: true,
-    });
   };
 
   render() {
@@ -51,7 +51,7 @@ class Multi extends Component {
           change={this.handleChange}
           check={this.handleCheck}
         />
-        <Viev active={this.state.active} />
+        <Viev active={this.state.active} sum={this.state.sumOfMulti} />
       </div>
     );
   }
