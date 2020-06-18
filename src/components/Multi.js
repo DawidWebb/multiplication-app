@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "./Multi.css";
+import Info from "./Info";
 import Data from "./Data";
 import Viev from "./Viev";
 class Multi extends Component {
@@ -8,7 +9,7 @@ class Multi extends Component {
     value: "",
     numbers: [],
     active: false,
-    sumOfMulti: null,
+    sumOfMulti: -1,
   };
   handleDraw = () => {
     let numbers = [...this.state.numbers];
@@ -19,6 +20,7 @@ class Multi extends Component {
     this.setState({
       numbers,
       value: "",
+      sumOfMulti: -1,
     });
   };
   handleChange = (e) => {
@@ -35,15 +37,18 @@ class Multi extends Component {
         sumOfMulti,
         active: true,
       });
-      console.log(sumOfMulti);
     } else {
-      return console.log("LOSE");
+      this.setState({
+        sumOfMulti: 0,
+        active: false,
+      });
     }
   };
 
   render() {
     return (
       <div className="Multi">
+        <Info sumOfMulti={this.state.sumOfMulti} />
         <Data
           value={this.state.value}
           numbers={this.state.numbers}

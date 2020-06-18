@@ -118,12 +118,12 @@ class Viev extends Component {
       <div className="StartViev">
         <div className="row">
           {numbersRow.map((number) => {
-            return <div>{number.name}</div>;
+            return <div key={number.id}>{number.name}</div>;
           })}
         </div>
         <div className="column">
           {numbersCol.map((number) => {
-            return <div>{number.name}</div>;
+            return <div key={number.id}>{number.name}</div>;
           })}
         </div>
 
