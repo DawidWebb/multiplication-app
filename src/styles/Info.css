@@ -1,0 +1,54 @@
+@media (orientation: portrait) and (max-width: 480px) {
+  .infoWin,
+  .infoLost,
+  .infoStart {
+    width: 80vw;
+    height: 90px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 481px) {
+  .infoWin,
+  .infoLost,
+  .infoStart {
+    width: 70vw;
+    height: 90px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 601px) {
+  .infoWin,
+  .infoLost,
+  .infoStart {
+    width: 65vw;
+    margin-bottom: 30px;
+    /* height: 90px;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid black;
+      font-size: 20px;
+      text-align: center; */
+  }
+}
+@media (min-width: 801px) {
+  .infoWin,
+  .infoLost,
+  .infoStart {
+    width: 55vw;
+  }
+}
+@media (min-width: 1025px) {
+  .infoWin,
+  .infoLost,
+  .infoStart {
+    width: 30vw;
+  }
+}

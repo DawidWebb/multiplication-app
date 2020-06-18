@@ -1,5 +1,5 @@
 import React from "react";
-import "./Data.css";
+import "../styles/Data.css";
 const Data = (props) => {
   return (
     <div className="container">

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./Multi.css";
+import "../styles/Multi.css";
 import Info from "./Info";
 import Data from "./Data";
 import Viev from "./Viev";

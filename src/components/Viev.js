@@ -1,5 +1,6 @@
+/* eslint-disable array-callback-return */
 import React, { Component } from "react";
-import "./Viev.css";
+import "../styles/Viev.css";
 
 const numbersCol = [
   { id: 2, name: 2 },

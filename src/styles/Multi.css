@@ -1,0 +1,12 @@
+@media (orientation: portrait) and (max-width: 480px) {
+  .Multi {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) {
+  .Multi {
+    display: flex;
+    flex-direction: column;
+  }
+}

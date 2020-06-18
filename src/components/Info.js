@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/Info.css";
 const Info = (props) => {
   if (props.sumOfMulti > 0) {
     return (
@@ -11,7 +11,7 @@ const Info = (props) => {
   } else if (props.sumOfMulti === 0) {
     return <div className="infoLost">Niestety wynik nie poprawny ):</div>;
   } else {
-    return <div></div>;
+    return <div className="infoStart"></div>;
   }
 };
 
