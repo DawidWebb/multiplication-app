@@ -12,6 +12,7 @@
     max-width: 1000px;
     min-height: 100vh;
     margin: 0 auto;
+
     background-image: url(../img/animals-102483_640.jpg);
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -19,6 +20,7 @@
   .name {
     text-align: center;
     margin-top: 20px auto;
+    margin-bottom: 10px;
     flex-basis: 90%;
     font-size: 20px;
     font-weight: 700;
