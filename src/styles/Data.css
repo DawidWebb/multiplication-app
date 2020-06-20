@@ -1,48 +1,74 @@
-.data {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-}
-.data div {
-  flex-basis: 20%;
-  width: 60px;
-  height: 60px;
-  border: 1px solid black;
-  font-size: 28px;
-  text-align: center;
-  line-height: 60px;
-}
-.sumOfMulti {
-  position: relative;
-}
-.sumOfMulti input {
-  width: 93%;
-  height: 93%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: none;
-  font-size: 28px;
-  text-align: center;
-}
+@media (min-width: 320px) {
+  .data {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+  }
+  .data div {
+    flex-basis: 20%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #1a3a22;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #1a3a22;
+    color: white;
+    font-weight: 700;
+  }
+  .sumOfMulti {
+    position: relative;
+  }
+  .sumOfMulti input {
+    width: 93%;
+    height: 93%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    font-size: 28px;
+    text-align: center;
+  }
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
-.buttons button {
-  flex-basis: 40%;
-  margin-top: 40px;
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.btnDraw {
-  background-color: black;
-  color: white;
-}
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttons button {
+    flex-basis: 35%;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btnDraw {
+    background-color: #540d11;
+    color: white;
+  }
 
-.btnCheck {
+  .btnCheck {
+    background-color: #1a3a22;
+    color: white;
+  }
+  .btnDraw:hover {
+    background-color: white;
+    color: #540d11;
+    font-weight: 700;
+  }
+
+  .btnCheck:hover {
+    background-color: white;
+    color: #1a3a22;
+    font-weight: 700;
+  }
+}
+@media (min-width: 641px) {
+  .buttons button {
+    flex-basis: 40%;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 20px;
+  }
 }

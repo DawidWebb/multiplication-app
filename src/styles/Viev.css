@@ -28,6 +28,8 @@
   text-align: center;
   line-height: 20px;
   cursor: pointer;
+  background-color: #442a1d;
+  color: white;
 }
 
 .calculationViev {
@@ -48,6 +50,7 @@
   border: 1px solid black;
   text-align: center;
   line-height: 20px;
+  background-color: #db9c71;
 }
 .active {
   background-color: green;

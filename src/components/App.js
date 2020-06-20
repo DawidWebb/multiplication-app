@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="name">Test</div>
+        <div className="name">Mnożenie dla początkujących</div>
         <Multi changeValue={this.changeValue} />
       </div>
     );

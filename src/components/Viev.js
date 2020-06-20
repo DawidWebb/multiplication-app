@@ -137,7 +137,9 @@ class Viev extends Component {
                     key={number.id}
                     name={number.name}
                     style={{ backgroundColor: "red" }}
-                  ></div>
+                  >
+                    {this.props.sum}
+                  </div>
                 );
               } else {
                 return <div key={number.id} name={number.name}></div>;

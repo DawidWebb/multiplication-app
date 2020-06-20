@@ -4,11 +4,14 @@
   .infoStart {
     width: 80vw;
     height: 90px;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid black;
+
     font-size: 20px;
     text-align: center;
+    background-color: #442a1d;
+    color: white;
   }
 }
 @media (min-width: 481px) {
@@ -19,9 +22,11 @@
     height: 90px;
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid black;
+
     font-size: 20px;
     text-align: center;
+    background-color: #442a1d;
+    color: white;
   }
 }
 @media (min-width: 601px) {

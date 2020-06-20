@@ -1,16 +1,29 @@
-@media (orientation: portrait) and (max-width: 480px) {
+/* #540D11
+#1A3A22
+#442A1D 
+#DB9C71*/
+
+@media (min-width: 320px) {
   .App {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: center;
-    height: 65vh;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url(../img/animals-102483_640.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
   }
   .name {
     text-align: center;
+    margin-top: 20px auto;
     flex-basis: 90%;
     font-size: 20px;
-    margin-top: 20px auto;
+    font-weight: 700;
+    background-color: #db9c71;
+    color: #540d11;
   }
   .Multi {
     margin-bottom: 50px;
@@ -19,24 +32,15 @@
     margin: 0 auto;
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 641px) {
   .App {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
     height: 60vh;
   }
   .name {
-    text-align: center;
-    flex-basis: 90%;
     font-size: 24px;
-    margin-top: 20px auto;
+    height: 40px;
   }
   .Multi {
     margin: 60px;
-  }
-  .StartViev {
-    margin: 0 auto;
   }
 }
